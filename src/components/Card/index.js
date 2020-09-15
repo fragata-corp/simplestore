@@ -1,5 +1,6 @@
-import { Box, Image, Text, Button, Flex } from "@chakra-ui/core"
 import React from "react"
+import { Box, Image, Text, Flex } from "@chakra-ui/core"
+import { Link } from "gatsby"
 
 function Card() {
   return (
@@ -13,14 +14,9 @@ function Card() {
       <Text fontSize="2xl">Awesome T-shirt</Text>
       <Flex justifyContent="space-between" alignItems="center" marginTop="10px">
         <Text fontWeight="bold">15.99</Text>
-        <Button
-          variantColor="gray"
-          variant="outline"
-          fontWeight="200"
-          size="sm"
-        >
-          Detalhes
-        </Button>
+        <Link to="/detail">
+          <Text color="blue.500">Detalhes</Text>
+        </Link>
       </Flex>
     </Box>
   )

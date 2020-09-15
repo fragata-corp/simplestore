@@ -1,6 +1,8 @@
-import { Flex, Button, Text, DarkMode } from "@chakra-ui/core"
-import { FaShoppingCart } from "react-icons/fa"
 import React from "react"
+import { Flex, Button, Text } from "@chakra-ui/core"
+import { FaShoppingCart } from "react-icons/fa"
+import { Link } from "gatsby"
+
 function Header() {
   return (
     <Flex
@@ -10,8 +12,9 @@ function Header() {
       alignItems="center"
       padding="20px 10%"
     >
-      <Text fontSize="2xl">SimpleStore</Text>
-
+      <Link to="/">
+        <Text fontSize="2xl">SimpleStore</Text>
+      </Link>
       <Button
         p="0 20px"
         size="sm"
